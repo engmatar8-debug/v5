@@ -69,7 +69,9 @@ export default function HeroSection() {
           transition={{ duration: 0.6 }}
           className="flex justify-center mb-8 mt-20"
         >
-          <Logo size="lg" />
+          <div className="scale-[2] lg:scale-[2.5]">
+  <Logo size="lg" />
+</div>
         </motion.div>
 
         {/* Label */}
