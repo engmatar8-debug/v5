@@ -67,7 +67,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
-          className="flex justify-center mb-24"
+          className="flex justify-center mb-8 mt-20"
         >
           <Logo size="lg" />
         </motion.div>
