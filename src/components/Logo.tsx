@@ -8,9 +8,9 @@ export default function Logo({
   variant = 'full'
 }: LogoProps) {
   const heights = {
-    sm: 'h-8',
-    md: 'h-10',
-    lg: 'h-14'
+    sm: 'h-12',
+    md: 'h-16',
+    lg: 'h-24'
   };
 
   if (variant === 'icon') {
