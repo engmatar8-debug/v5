@@ -69,11 +69,11 @@ export default function HeroSection() {
           transition={{ duration: 0.6 }}
           className="flex justify-center mb-8 mt-20"
         >
-          <div className="scale-[2] lg:scale-[2.5]">
+          <div className="scale-[2] lg:scale-[1.5]">
   <img
   src="/assets/images/cortex-logo.png"
   alt="Cortex AI"
-  className="w-[400px] lg:w-[600px] xl:w-[700px] h-auto"
+  className="w-[220px] lg:w-[320px] xl:w-[380px] h-auto"
  />
 </div>
         </motion.div>
