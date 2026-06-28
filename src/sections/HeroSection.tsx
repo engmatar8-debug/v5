@@ -69,7 +69,7 @@ export default function HeroSection() {
           transition={{ duration: 0.6 }}
           className="flex justify-center mb-8 mt-20"
         >
-          <div className="scale-[2] lg:scale-[2.5]">
+          <div className="scale-[2] lg:scale-[1.5]">
   <img
   src="/assets/images/cortex-logo.png"
   alt="Cortex AI"
