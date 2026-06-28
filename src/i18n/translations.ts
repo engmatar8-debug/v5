@@ -157,7 +157,7 @@ export const translations: Record<Language, Translations> = {
       services: 'Services',
       academy: 'Academy',
       blog: 'Blog',
-      contact: 'Contact',
+      contact: 'Contact Us',
       bookConsultation: 'Book Consultation',
     },
     hero: {
