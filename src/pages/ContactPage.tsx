@@ -22,19 +22,54 @@ export default function ContactPage() {
   const [form, setForm] = useState<FormData>({ name: '', email: '', company: '', phone: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const ACCESS_KEY = "c8877ecd-53f4-4528-beda-bce95473ed09";
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      setSubmitted(true);
-    }, 1500);
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setLoading(true);
+
+  const object = {
+    access_key: ACCESS_KEY,
+    name: form.name,
+    email: form.email,
+    company: form.company,
+    phone: form.phone,
+    message: form.message,
+    subject: "New Contact Form - Cortex AI"
   };
+
+  const response = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify(object),
+  });
+
+  const result = await response.json();
+
+  setLoading(false);
+
+  if (result.success) {
+    setSubmitted(true);
+
+    setForm({
+      name: "",
+      email: "",
+      company: "",
+      phone: "",
+      message: "",
+    });
+  } else {
+    alert("Failed to send message.");
+    console.log(result);
+  }
+};
 
   const socialLinks = [
     { icon: Linkedin, href: 'https://linkedin.com/company/cortexforai', label: 'LinkedIn', color: '#0077B5' },
