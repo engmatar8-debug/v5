@@ -101,10 +101,14 @@ export default function Navbar() {
                 )}
               </AnimatePresence>
             </div>
-
-            <Link to="/contact" className="btn-primary text-sm px-5 py-2.5">
-              {t.nav.bookConsultation}
-            </Link>
+<a
+  href="https://calendar.app.google/2edBD2nCjZBPKuxw9"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn-primary text-base px-8 py-4"
+>
+  {t.hero.bookConsultation}
+</a>
           </div>
 
           {/* Mobile toggle */}
