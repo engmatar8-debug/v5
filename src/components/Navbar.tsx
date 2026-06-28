@@ -105,7 +105,7 @@ export default function Navbar() {
   href="https://calendar.app.google/2edBD2nCjZBPKuxw9"
   target="_blank"
   rel="noopener noreferrer"
-  className="btn-primary text-base px-8 py-4"
+  className="btn-primary text-base px-6 py-2"
 >
   {t.hero.bookConsultation}
 </a>
