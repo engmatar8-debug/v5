@@ -250,7 +250,7 @@ export default function ContactPage() {
                         </div>
                         <div>
                           <p className="text-brand-textMuted text-xs mb-0.5">Headquarters</p>
-                          <p className="text-white text-sm font-medium">Riyadh, Saudi Arabia</p>
+                          <p className="text-white text-sm font-medium">Kuala Lumpur, Malaysia</p>
                         </div>
                       </div>
 
