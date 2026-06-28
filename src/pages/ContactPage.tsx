@@ -73,7 +73,7 @@ export default function ContactPage() {
 
   const socialLinks = [
     { icon: Linkedin, href: 'https://linkedin.com/company/cortexforai', label: 'LinkedIn', color: '#0077B5' },
-    { icon: Facebook, href: 'https://facebook.com/cortexforai', label: 'Facebook', color: '#1877F2' },
+    { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61591665562660', label: 'Facebook', color: '#1877F2' },
     { icon: Instagram, href: 'https://instagram.com/cortexforai', label: 'Instagram', color: '#E4405F' },
     { icon: Twitter, href: 'https://x.com/cortexforai', label: 'X / Twitter', color: '#1DA1F2' },
   ];
