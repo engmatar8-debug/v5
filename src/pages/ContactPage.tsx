@@ -250,10 +250,9 @@ export default function ContactPage() {
                         </div>
                         <div>
                           <p className="text-brand-textMuted text-xs mb-0.5">Headquarters</p>
-                          <p className="text-white text-sm font-medium">Gedung Jaya Lantai 5 unit A.6 JL. M.H Thamrin 
-No.12 , RT.002/RW.001, Kb. Sirih, Kec. Menteng, 
-Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 
-10340</p>
+                          <p className="text-white text-sm font-medium">Gedung Jaya, Lt. 5 Unit A.6
+Jl. M.H. Thamrin No. 12
+Jakarta Pusat 10340</p>
                         </div>
                       </div>
 
